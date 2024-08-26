@@ -64,7 +64,7 @@ public class MainPage {
 
     // Прокрутка к кнопке "Заказать" в середине страницы
     public MainPage scrollToDownOrderButton() {
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(orderMiddleButton));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(false);", driver.findElement(orderMiddleButton));
         return this;
     }
     // Выбор одной из кнопок "Заказать"
