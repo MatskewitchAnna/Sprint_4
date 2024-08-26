@@ -42,8 +42,8 @@ public class QuestionBlockTest extends BrowserSettings {
         new MainPage(driver)
                 .openSite()
                 .clickCookieAcceptanceButton()
-                .scrollPageToEndOfList()
-                .clickQuestionsList(questionLocator);
+                .scrollPageToEndOfList();
+        MainPage.clickQuestionsList(questionLocator);
 
         new MainPage(driver);
         String ActualAnswerText = driver.findElement(By.id(answerLocator)).getText();
